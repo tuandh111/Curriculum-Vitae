@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Ben's Resume - Profile HTML Page</title>
+  <title>Hồ sơ cá nhân Đặng Hoàng Tuấn</title>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -25,7 +25,7 @@ https://www.tooplate.com/view/2120-ben-resume
 -->
 </head>
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50" style="text-align: justify;">
 
   <!-- MENU BAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -220,7 +220,7 @@ https://www.tooplate.com/view/2120-ben-resume
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item" id="networkAdminProject">
               <div class="testimonials-thumb d-flex">
                 <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
                   <img src="images/1.jpg" class="img-fluid mt-3" alt="Dự án Quản trị hệ thống mạng"
@@ -237,7 +237,7 @@ https://www.tooplate.com/view/2120-ben-resume
               </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="computerTechnicianProject">
               <div class="testimonials-thumb d-flex">
                 <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
                   <img src="images/images.jpg" class="img-fluid mt-3" alt="Dự án Kỹ thuật viên máy tính"
@@ -250,10 +250,10 @@ https://www.tooplate.com/view/2120-ben-resume
                     và tối ưu hiệu suất thiết bị.
                   </p>
                   <h6 class="mb-0" id="computerTechnicianProjectTitle">Kỹ thuật viên Sửa chữa Máy tính - Laptop</h6>
-
                 </div>
               </div>
             </div>
+
 
           </div>
 
@@ -559,31 +559,37 @@ https://www.tooplate.com/view/2120-ben-resume
         </div>
 
         <!-- Contact Us Section -->
-        <div class="col-lg-4 col-md-6 col-12 mx-auto">
-          <h3 class="my-4 pt-4 pt-lg-0">Thông tin liên hệ</h3>
+        <!-- Contact Us Section -->
+        <div class="col-lg-4 col-md-6 col-12 mx-auto" id="contact-us-section">
+          <h3 class="my-4 pt-4 pt-lg-0" id="contact-title">Thông tin liên hệ</h3>
 
-          <p class="mb-1"><strong>Phone:</strong> 0383658814</p>
+          <p class="mb-1" id="contact-phone">SĐT: 0383658814</p>
 
-          <p><strong>Email:</strong>
-            <a href="mailto:hello@company.co">tuandhit99@gmail.com</a>
+          <p id="contact-email"><strong>Email:</strong>
+            <a href="mailto:hello@company.co" id="contact-email-link">tuandhit99@gmail.com</a>
           </p>
 
-          <p><strong>Địa chỉ của tôi:</strong> Ấp Khánh Hội, Thị Trấn Ngã Sáu, Châu Thành, Hậu Giang</p>
+          <p id="contact-address">Địa chỉ của tôi: Ấp Khánh Hội, Thị Trấn Ngã Sáu, Châu Thành, Hậu
+            Giang</p>
+
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d779.4976873277933!2d105.8009815072095!3d9.948704002271636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zLA!5e0!3m2!1svi!2s!4v1745844117602!5m2!1svi!2s"
             width="230" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <ul class="social-links mt-2">
+            referrerpolicy="no-referrer-when-downgrade" id="contact-map"></iframe>
+
+          <ul class="social-links mt-2" id="social-links">
             <li><a href="https://www.facebook.com/share/1BXjrJAWBS/?mibextid=wwXIfr" rel="noopener"
-                class="fab fa-facebook"></a></li>
-            <li><a href="https://github.com/tuandh111" rel="noopener" class="fab fa-github"></a></li>
-            <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
-            <li><a href="#" rel="noopener" class="fab fa-linkedin"></a></li>
-            <li><a href="https://www.youtube.com/@tuandang2499" rel="noopener" class="fab fa-youtube"></a></li>
+                class="fab fa-facebook" id="facebook-link"></a></li>
+            <li><a href="https://github.com/tuandh111" rel="noopener" class="fab fa-github" id="github-link"></a></li>
+            <li><a href="#" rel="noopener" class="fab fa-instagram" id="instagram-link"></a></li>
+            <li><a href="#" rel="noopener" class="fab fa-linkedin" id="linkedin-link"></a></li>
+            <li><a href="https://www.youtube.com/@tuandang2499" rel="noopener" class="fab fa-youtube"
+                id="youtube-link"></a></li>
           </ul>
 
-          <p class="copyright-text mt-5 pt-3"> &copy; 2025 Đặng Hoàng Tuấn.</p>
+          <p class="copyright-text mt-5 pt-3" id="copyright-text"> &copy; 2025 Đặng Hoàng Tuấn.</p>
         </div>
+
 
       </div>
 
@@ -689,12 +695,26 @@ https://www.tooplate.com/view/2120-ben-resume
         questionNine: "Bạn cảm thấy thoải mái làm việc với công nghệ nào nhất?",
         answerNine: "Tôi thành thạo các công nghệ frontend như JavaScript, jQuery, và AngularJS. Đối với phát triển backend, tôi sử dụng Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core), và Node.js (ExpressJS). Tôi cũng có kinh nghiệm với các cơ sở dữ liệu quan hệ và NoSQL như MySQL, SQL Server, MongoDB và PostgreSQL."
         ,
-
+        contactTitle: "Thông tin liên hệ",
+        contactPhone: "SĐT: 0383658814",
+        contactEmail: "tuandhit99@gmail.com",
+        contactAddress: "Địa chỉ của tôi: Ấp Khánh Hội, Thị Trấn Ngã Sáu, Châu Thành, Hậu Giang",
+        facebook: "Facebook",
+        github: "GitHub",
+        instagram: "Instagram",
+        linkedin: "LinkedIn",
+        youtube: "YouTube",
+        copyrightText: "© 2025 Đặng Hoàng Tuấn"
+        ,
         labelFullname: "Họ và tên",
         labelEmail: "Email của bạn",
         labelMessage: "Tin nhắn",
         labelSend: "Gửi",
-        Frequently: "Câu hỏi thường gặp"
+        Frequently: "Câu hỏi thường gặp",
+        networkAdminProjectTitle: "Triển khai và Quản trị Hệ thống Mạng Doanh nghiệp",
+        networkAdminProjectDesc: "Thiết kế và triển khai hệ thống mạng LAN/WAN cho doanh nghiệp, cấu hình Firewall Fortinet, định tuyến Router Cisco, xây dựng VPN truy cập từ xa và giám sát hệ thống với Zabbix, đảm bảo uptime 99.9%.",
+        computerTechnicianProjectTitle: "Kỹ thuật viên Sửa chữa Máy tính - Laptop",
+        computerTechnicianProjectDesc: "Thực hiện bảo trì, sửa chữa, nâng cấp phần cứng và phần mềm cho máy tính, laptop. Cài đặt hệ điều hành (Windows, Linux), vệ sinh phần cứng, thay thế linh kiện (RAM, SSD, HDD), khắc phục lỗi hệ thống và tối ưu hiệu suất thiết bị.",
       },
       en: {
         brand: "Hoang Tuan Dang",
@@ -752,7 +772,21 @@ https://www.tooplate.com/view/2120-ben-resume
         labelEmail: "Your Email",
         labelMessage: "Message",
         labelSend: "Send",
-        Frequently: "Frequently Asked Questions"
+        Frequently: "Frequently Asked Questions",
+        networkAdminProjectTitle: "Enterprise Network System Deployment and Administration",
+        networkAdminProjectDesc: "Design and implement LAN/WAN network systems for businesses, configure Fortinet Firewalls, route Cisco Routers, build remote access VPNs, and monitor the system with Zabbix, ensuring 99.9% uptime.",
+        computerTechnicianProjectTitle: "Computer and Laptop Technician",
+        computerTechnicianProjectDesc: "Perform maintenance, repair, and upgrade of computer and laptop hardware and software. Install operating systems (Windows, Linux), clean hardware, replace components (RAM, SSD, HDD), troubleshoot system errors, and optimize device performance.",
+        contactTitle: "Contact Information",
+        contactPhone: "Phone: 0383658814",
+        contactEmail: "tuandhit99@gmail.com",
+        contactAddress: "My address: Ap Khanh Hoi, Thi Tran Nga Sau, Chau Thanh, Hau Giang",
+        facebook: "Facebook",
+        github: "GitHub",
+        instagram: "Instagram",
+        linkedin: "LinkedIn",
+        youtube: "YouTube",
+        copyrightText: "© 2025 Hoang Tuan Dang"
       }
     };
 
@@ -826,6 +860,23 @@ https://www.tooplate.com/view/2120-ben-resume
       document.getElementById("label-message").textContent = translations[currentLang].labelMessage;
       document.getElementById("submit-button").textContent = translations[currentLang].labelSend;
       document.getElementById("Frequently").textContent = translations[currentLang].Frequently;
+
+      document.getElementById("contact-title").textContent = translations[currentLang].contactTitle;
+      document.getElementById("contact-phone").textContent = translations[currentLang].contactPhone;
+      document.getElementById("contact-email-link").textContent = translations[currentLang].contactEmail;
+      document.getElementById("contact-address").textContent = translations[currentLang].contactAddress;
+      document.getElementById("facebook-link").title = translations[currentLang].facebook;
+      document.getElementById("github-link").title = translations[currentLang].github;
+      document.getElementById("instagram-link").title = translations[currentLang].instagram;
+      document.getElementById("linkedin-link").title = translations[currentLang].linkedin;
+      document.getElementById("youtube-link").title = translations[currentLang].youtube;
+      document.getElementById("copyright-text").textContent = translations[currentLang].copyrightText;
+
+
+      document.getElementById("networkAdminProjectTitle").innerText = translations[currentLang].networkAdminProjectTitle;
+      document.getElementById("networkAdminProjectDesc").innerText = translations[currentLang].networkAdminProjectDesc;
+      document.getElementById("computerTechnicianProjectTitle").innerText = translations[currentLang].computerTechnicianProjectTitle;
+      document.getElementById("computerTechnicianProjectDesc").innerText = translations[currentLang].computerTechnicianProjectDesc;
     });
   </script>
 
