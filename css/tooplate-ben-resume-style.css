@@ -127,8 +127,10 @@ p {
   border-radius: var(--border-radius-medium);
   color: var(--white-color);
   letter-spacing: 0.2px;
-  padding: 6px 36px 10px 36px;
-  font-size: var(--button-font-size);
+  padding: 4px 24px 6px 24px;
+  /* Giảm padding */
+  font-size: 14px;
+  /* Giảm font-size */
   white-space: nowrap;
 }
 

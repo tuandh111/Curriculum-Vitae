@@ -28,11 +28,11 @@ https://www.tooplate.com/view/2120-ben-resume
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
   <!-- MENU BAR -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
 
       <a class="navbar-brand" href="#">
-        Hoang Tuan Dang
+        <span id="brand-name">Đặng Hoàng Tuấn</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -43,34 +43,34 @@ https://www.tooplate.com/view/2120-ben-resume
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+            <a href="#intro" class="nav-link smoothScroll" id="nav-intro">Giới thiệu</a>
           </li>
 
           <li class="nav-item">
-            <a href="#about" class="nav-link smoothScroll">About Me</a>
+            <a href="#about" class="nav-link smoothScroll" id="nav-about">Về tôi</a>
           </li>
 
           <li class="nav-item">
-            <a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
+            <a href="#testimonials" class="nav-link smoothScroll" id="nav-reviews">Đánh giá</a>
           </li>
 
           <li class="nav-item">
-            <a href="#contact" class="nav-link smoothScroll">Contact</a>
+            <a href="#contact" class="nav-link smoothScroll" id="nav-contact">Liên hệ</a>
           </li>
 
           <li class="nav-item">
-            <a href="#contact2" class="nav-link smoothScroll">Awards</a>
+            <a href="#contact2" class="nav-link smoothScroll" id="nav-awards">Giải thưởng</a>
           </li>
         </ul>
 
-        <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-          <a href="cv/cv.pdf" class="custom-btn btn">View CV</a>
+        <div class="d-flex align-items-center">
+          <a href="cv/cv.pdf" class="custom-btn btn btn-primary" id="btn-cv" style="margin-right: 10px;">Xem CV</a>
+          <button id="switch-language" class="custom-btn btn btn-primary" style="border-radius: 50px;">English</button>
         </div>
       </div>
 
     </div>
   </nav>
-
 
   <!-- HERO -->
   <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
@@ -85,7 +85,8 @@ https://www.tooplate.com/view/2120-ben-resume
         <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
           <div class="hero-text">
 
-            <h1 class="hero-title">👋 Hoang Tuan Dang, IT Staff</h1>
+            <h1 id="hero-title" class="hero-title">👋 Đặng Hoàng Tuấn, Nhân viên IT</h1>
+
 
             <a href="#" class="email-link">
               tuandhit99@gmail.com
@@ -107,22 +108,25 @@ https://www.tooplate.com/view/2120-ben-resume
       <div class="row">
 
         <div class="col-lg-6 col-md-6 col-12">
-          <h3 class="mb-4">About Hoang Tuan Dang</h3>
+          <h3 class="mb-4" id="brand-about-me">Về Đặng Hoàng Tuấn</h3>
 
-          <p>I am a passionate IT staff with hands-on experience in backend development and network/system
-            administration. I am always eager to learn new technologies and continuously improve my skills.</p>
+          <p id="content-about-me-p1">Tôi là một nhân viên IT đam mê với kinh nghiệm thực tế trong phát triển backend và
+            quản trị mạng/hệ thống. Tôi luôn khao khát học hỏi công nghệ mới và liên tục nâng cao kỹ năng của mình.</p>
 
-          <p>Currently, I am pursuing my studies at FPT Polytechnic College with a major in Information Technology (GPA:
-            3.5). My long-term goal is to become a full-stack engineer with a strong foundation in infrastructure and
-            DevOps.</p>
+          <p id="content-about-me-p2">Hiện tại, tôi đang theo học tại Trường Cao đẳng FPT Polytechnic với chuyên ngành
+            Công nghệ Thông tin (GPA: 3.5). Mục tiêu dài hạn của tôi là trở thành một kỹ sư full-stack với nền tảng vững
+            chắc về cơ sở hạ tầng và DevOps và quản trị mạng.</p>
 
 
           <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-            <li><strong>Full Name :</strong> Hoang Tuan Dang </li>
+            <li><strong id="full-name-about-me">Họ và tên :</strong> <a href="" id="name-about-me">Đặng Hoàng Tuấn</a>
+            </li>
 
-            <li><strong>Date of Birth:</strong> 01/01/1999</li>
+            <li><strong id="dob-about-me">Ngày sinh:</strong> <a href="">01/01/1999</a> </li>
 
-            <li><strong>Website :</strong> company.co</li>
+            <li><strong id="web-about-me">Website :</strong> <a
+                href="https://tuandh111.github.io/Curriculum-Vitae/">https://tuandh111.github.io/Curriculum-Vitae/</a>
+            </li>
 
             <li><strong>Email :</strong> tuandhit99@gmail.com</li>
           </ul>
@@ -135,23 +139,24 @@ https://www.tooplate.com/view/2120-ben-resume
       </div>
       <div class="row about-third">
         <div class="col-lg-4 col-md-4 col-12">
-          <h3>Main Skills</h3>
-          <p>Proficient in backend development with Java (Spring Boot), Golang (Echo), and C# (.NET Core). Solid
-            knowledge in network and system administration including Cisco, FortiGate, and virtualization platforms like
-            VMware and Hyper-V.</p>
+          <h3 id="main-skills-title">Kỹ Năng Chính</h3>
+          <p id="main-skills-content">Thành thạo phát triển backend với Java (Spring Boot), Golang (Echo), và C# (.NET
+            Core). Kiến thức vững về quản trị mạng và hệ thống bao gồm Cisco, FortiGate, và các nền tảng ảo hóa như
+            VMware và Hyper-V.</p>
         </div>
         <div class="col-lg-4 col-md-4 col-12">
-          <h3>Practical Experience</h3>
-          <p>Hands-on experience in system administration, software development, and warehouse management at companies
-            such as Lac Ty, Dai Phat Dat, and Ninja Van. Recently contributed to backend API development at ST
-            Connection.</p>
+          <h3 id="practical-experience-title">Kinh Nghiệm Thực Tế</h3>
+          <p id="practical-experience-content">Kinh nghiệm thực tế trong quản trị hệ thống, phát triển phần mềm, và quản
+            lý kho tại các công ty như Lac Ty, Đại Phát Đạt và Ninja Van. Gần đây đã đóng góp vào phát triển API backend
+            tại ST Connection.</p>
         </div>
         <div class="col-lg-4 col-md-4 col-12">
-          <h3>Career Objective</h3>
-          <p>To become a full-stack engineer with strong DevOps capabilities, continuously enhancing knowledge in cloud
-            technologies, distributed systems, and cybersecurity best practices.</p>
+          <h3 id="career-objective-title">Mục Tiêu Nghề Nghiệp</h3>
+          <p id="career-objective-content">Trở thành một kỹ sư full-stack với khả năng DevOps mạnh mẽ, liên tục nâng cao
+            kiến thức về công nghệ đám mây, hệ thống phân tán và các phương pháp bảo mật mạng.</p>
         </div>
       </div>
+
 
     </div>
   </section>
@@ -162,34 +167,20 @@ https://www.tooplate.com/view/2120-ben-resume
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h3 class="mb-5 text-center">Highlighted Projects</h3>
+          <h3 class="mb-5 text-center" id="highlighted-projects-title">Các Dự Án Nổi Bật</h3>
 
           <div class="owl-carousel owl-theme" id="testimonials-carousel">
             <div class="item">
               <div class="testimonials-thumb d-flex">
                 <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
-                  <img src="images/testimonials/1.webp" class="img-fluid" alt="Blockchain Project"
+                  <img src="images/testimonials/1.webp" class="img-fluid" alt="Dự án Blockchain"
                     style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="testimonials-info">
-                  <p>Developed a blockchain-based application using Golang, covering transaction validation,
-                    peer-to-peer communication, and proof-of-work mechanisms.</p>
-                  <h6 class="mb-0">Blockchain Project</h6>
-                  <span><a href="https://github.com/tuandh111/Blockchain" target="_blank">View on GitHub</a></span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonials-thumb d-flex">
-                <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
-                  <img src="images/testimonials/2.jpg" class="img-fluid" alt="Chatbot Project"
-                    style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="testimonials-info">
-                  <p>Built a Telegram chatbot using Java, NLP techniques, integrated Apache Solr for fast search, and
-                    MySQL for managing user data.</p>
-                  <h6 class="mb-0">Telegram Chatbot</h6>
-                  <span><a href="https://github.com/tuandh111/Chatbot_java.git" target="_blank">View on
+                  <p id="blockchainProjectDesc">Phát triển một ứng dụng dựa trên Blockchain sử dụng Golang, bao gồm xác
+                    thực giao dịch, giao tiếp ngang hàng, và cơ chế proof-of-work.</p>
+                  <h6 class="mb-0" id="blockchainProjectTitle">Dự án Blockchain</h6>
+                  <span><a href="https://github.com/tuandh111/Blockchain" target="_blank" id="viewOnGitHub">Xem trên
                       GitHub</a></span>
                 </div>
               </div>
@@ -197,20 +188,38 @@ https://www.tooplate.com/view/2120-ben-resume
             <div class="item">
               <div class="testimonials-thumb d-flex">
                 <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
-                  <img src="images/testimonials/3.png" class="img-fluid" alt="Clinic Management Project"
+                  <img src="images/testimonials/2.jpg" class="img-fluid" alt="Dự án Chatbot"
                     style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="testimonials-info">
-                  <p>Designed and implemented a dental clinic management system including patient records, appointments,
-                    and treatment tracking using Java Spring Boot and AngularJS.</p>
-
-                  <h6 class="mb-0">Dental Clinic Management</h6>
-                  <span><a href="https://github.com/tuandh111/GraduationThesis" target="_blank">View Backend</a> | <a
-                      href="https://github.com/tuandh111/GraduationThesisFE" target="_blank">View Frontend</a></span>
+                  <p id="telegramChatbotDesc">Xây dựng một chatbot Telegram sử dụng Java, kỹ thuật NLP, tích hợp Apache
+                    Solr cho tìm kiếm nhanh, và MySQL để quản lý dữ liệu người dùng.</p>
+                  <h6 class="mb-0" id="telegramChatbotTitle">Chatbot Telegram</h6>
+                  <span><a href="https://github.com/tuandh111/Chatbot_java.git" target="_blank"
+                      id="viewOnGitHubChatbot">Xem
+                      trên GitHub</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials-thumb d-flex">
+                <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
+                  <img src="images/testimonials/3.png" class="img-fluid" alt="Dự án Quản lý Phòng khám"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="testimonials-info">
+                  <p id="dentalClinicProjectDesc">Thiết kế và triển khai hệ thống quản lý phòng khám nha khoa bao gồm hồ
+                    sơ bệnh nhân, lịch hẹn, và theo dõi điều trị sử dụng Java Spring Boot và AngularJS.</p>
+                  <h6 class="mb-0" id="dentalClinicProjectTitle">Quản lý Phòng khám Nha khoa</h6>
+                  <span><a href="https://github.com/tuandh111/GraduationThesis" target="_blank" id="viewBackend">Xem
+                      Backend</a> | <a href="https://github.com/tuandh111/GraduationThesisFE" target="_blank"
+                      id="viewFrontend">Xem Frontend</a></span>
                 </div>
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
 
@@ -233,18 +242,16 @@ https://www.tooplate.com/view/2120-ben-resume
                 <h2 class="mb-0">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
-                    Can you introduce yourself and tell us about your background?
+                    <span id="question1">Bạn có thể giới thiệu về bản thân và cho chúng tôi biết về quá trình học tập và
+                      công việc của bạn không?</span>
                   </button>
                 </h2>
               </div>
-
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I am a versatile full-stack developer with extensive experience in both frontend and backend
-                    development. My expertise includes working with technologies such as JavaScript, jQuery, AngularJS
-                    for the frontend, and Java Spring Boot, Golang, C# (.NET Core), and Node.js for backend development.
-                    I have also worked with various databases like MySQL, SQL Server, MongoDB, and PostgreSQL, and have
-                    experience implementing caching, microservices, and blockchain solutions.</p>
+                  <p id="answer1">Tôi là một nhân viên IT đam mê với kinh nghiệm thực tế trong phát triển backend và
+                    quản trị mạng/hệ thống. Tôi luôn khao khát học hỏi công nghệ mới và liên tục nâng cao kỹ năng của
+                    mình.</p>
                 </div>
               </div>
             </div>
@@ -254,18 +261,16 @@ https://www.tooplate.com/view/2120-ben-resume
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
-                    What projects have you worked on in the past?
+                    <span id="question2">Bạn đã tham gia vào những dự án nào trong quá khứ?</span>
                   </button>
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I have worked on various projects, including building a scalable blockchain application using
-                    Golang, which involved transaction handling and network communication via gRPC and ECDSA. I have
-                    also developed several web applications using Java Spring Boot and AngularJS, and contributed to
-                    optimizing database queries using technologies like PostgreSQL, MongoDB, and Apache Solr.
-                    Additionally, I have experience with cloud infrastructure (AWS), containerization (Docker), and
-                    version control systems like Git and GitHub.</p>
+                  <p id="answer2">Tôi đã làm việc trên nhiều dự án, bao gồm phát triển một ứng dụng blockchain sử dụng
+                    Golang, xử lý giao dịch và giao tiếp mạng thông qua gRPC và ECDSA. Tôi cũng đã phát triển một số ứng
+                    dụng web sử dụng Java Spring Boot và AngularJS, đồng thời tối ưu hóa truy vấn cơ sở dữ liệu với
+                    PostgreSQL, MongoDB và Apache Solr.</p>
                 </div>
               </div>
             </div>
@@ -275,37 +280,36 @@ https://www.tooplate.com/view/2120-ben-resume
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    What specific technologies are you most comfortable working with?
+                    <span id="question3">Bạn cảm thấy thoải mái làm việc với công nghệ nào nhất?</span>
                   </button>
                 </h2>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I am proficient in frontend technologies such as JavaScript, jQuery, and AngularJS. For backend
-                    development, I work with Java (Spring Boot, Spring MVC, Spring Data), Golang (Echo, GORM), C# (.NET
-                    Core), and Node.js (ExpressJS). I have extensive experience working with relational and NoSQL
-                    databases like MySQL, SQL Server, MongoDB, and PostgreSQL. Additionally, I have worked with
-                    technologies such as Docker, AWS, and microservices architecture to build scalable and efficient
-                    applications.</p>
+                  <p id="answer3">Tôi thành thạo các công nghệ frontend như JavaScript, jQuery, và AngularJS. Đối với
+                    phát triển backend, tôi sử dụng Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core),
+                    và Node.js (ExpressJS). Tôi cũng có kinh nghiệm với các cơ sở dữ liệu quan hệ và NoSQL như MySQL,
+                    SQL Server, MongoDB và PostgreSQL.</p>
                 </div>
               </div>
             </div>
-
             <div class="card">
               <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    How do you approach problem-solving in your projects?
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="questionFour">
+                    Bạn tiếp cận việc giải quyết vấn đề trong các dự án của mình như thế nào?
                   </button>
                 </h2>
               </div>
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I approach problem-solving by breaking down complex challenges into smaller, more manageable tasks.
-                    I leverage my knowledge of algorithms, design patterns, and best practices to find the most
-                    efficient and scalable solutions. Additionally, I collaborate with teams and utilize tools like Git,
-                    Docker, and cloud services to ensure that the solution is scalable, secure, and maintainable.</p>
+                  <p id="answerFour">Tôi tiếp cận việc giải quyết vấn đề bằng cách phân tích các thách thức phức tạp
+                    thành những nhiệm
+                    vụ nhỏ hơn và dễ quản lý hơn. Tôi tận dụng kiến thức về thuật toán, mẫu thiết kế, và các phương pháp
+                    tốt nhất để tìm ra những giải pháp hiệu quả và có khả năng mở rộng. Bên cạnh đó, tôi hợp tác với các
+                    nhóm và sử dụng các công cụ như Git, Docker và dịch vụ đám mây để đảm bảo rằng giải pháp là có thể
+                    mở rộng, bảo mật và bảo trì được.</p>
                 </div>
               </div>
             </div>
@@ -314,18 +318,19 @@ https://www.tooplate.com/view/2120-ben-resume
               <div class="card-header" id="headingFive">
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    What motivates you to continue growing as a developer?
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="questionFive">
+                    Điều gì thúc đẩy bạn tiếp tục phát triển như một nhà phát triển?
                   </button>
                 </h2>
               </div>
               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I am passionate about continuous learning and applying new technologies to solve real-world
-                    problems. The ever-evolving nature of the tech industry motivates me to stay updated on the latest
-                    advancements in frameworks, programming languages, and best practices. I find great satisfaction in
-                    building scalable, efficient, and impactful applications that can make a difference in people's
-                    lives and businesses.</p>
+                  <p id="answerFive">Tôi đam mê việc học hỏi liên tục và áp dụng công nghệ mới để giải quyết các vấn đề
+                    trong thế giới
+                    thực. Tính chất luôn thay đổi của ngành công nghệ thúc đẩy tôi duy trì cập nhật về các tiến bộ mới
+                    nhất trong các framework, ngôn ngữ lập trình và các phương pháp tốt nhất. Tôi tìm thấy sự thỏa mãn
+                    lớn khi xây dựng các ứng dụng có thể mở rộng, hiệu quả và có tác động tích cực đến cuộc sống của mọi
+                    người và các doanh nghiệp.</p>
                 </div>
               </div>
             </div>
@@ -335,21 +340,20 @@ https://www.tooplate.com/view/2120-ben-resume
               <div class="card-header" id="headingSix">
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix"
-                    aria-expanded="false" aria-controls="collapseSix">
-                    Why should we choose you for this position?
+                    aria-expanded="false" aria-controls="collapseSix" id="questionSix">
+                    Tại sao chúng tôi nên chọn bạn cho vị trí này?
                   </button>
                 </h2>
               </div>
               <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I believe I bring a strong combination of skills, experience, and passion to the table. My
-                    experience
-                    working with a wide range of technologies, combined with my ability to learn quickly and adapt to
-                    new
-                    challenges, makes me an excellent fit for this role. I am driven, collaborative, and always strive
-                    to
-                    deliver high-quality work. I am confident that my background and dedication will help me contribute
-                    effectively to your team and achieve the company's goals.</p>
+                  <p id="answerSix">Tôi tin rằng tôi mang đến một sự kết hợp mạnh mẽ giữa kỹ năng, kinh nghiệm và đam mê
+                    cho công việc.
+                    Kinh nghiệm làm việc với nhiều công nghệ khác nhau, kết hợp với khả năng học hỏi nhanh và thích nghi
+                    với thử thách mới, khiến tôi trở thành một ứng viên xuất sắc cho vị trí này. Tôi có động lực, khả
+                    năng làm việc nhóm và luôn cố gắng hoàn thành công việc với chất lượng cao. Tôi tự tin rằng với nền
+                    tảng và sự cống hiến của mình, tôi sẽ đóng góp hiệu quả cho đội ngũ của bạn và đạt được các mục tiêu
+                    của công ty.</p>
                 </div>
               </div>
             </div>
@@ -359,18 +363,16 @@ https://www.tooplate.com/view/2120-ben-resume
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    How do you handle tight deadlines or high-pressure situations?
+                    <span id="questionSeven">Bạn có thể giới thiệu về bản thân và cho chúng tôi biết về quá trình học
+                      tập và công việc của bạn không?</span>
                   </button>
                 </h2>
               </div>
               <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I thrive in high-pressure situations by staying organized and focused. I prioritize tasks based on
-                    deadlines and importance, and I communicate clearly with my team to ensure we are aligned. When
-                    facing
-                    tight deadlines, I break down the tasks into smaller, manageable components and tackle them one by
-                    one,
-                    ensuring that I maintain quality while meeting the deadline.</p>
+                  <p id="answerSeven">Tôi là một nhân viên IT đam mê với kinh nghiệm thực tế trong phát triển backend và
+                    quản trị mạng/hệ thống. Tôi luôn khao khát học hỏi công nghệ mới và liên tục nâng cao kỹ năng của
+                    mình.</p>
                 </div>
               </div>
             </div>
@@ -380,20 +382,16 @@ https://www.tooplate.com/view/2120-ben-resume
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    What makes you stand out compared to other candidates?
+                    <span id="questionEight">Bạn đã tham gia vào những dự án nào trong quá khứ?</span>
                   </button>
                 </h2>
               </div>
               <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>What sets me apart is my ability to combine technical expertise with strong communication and
-                    teamwork
-                    skills. While many developers focus primarily on coding, I believe in understanding the bigger
-                    picture
-                    and collaborating closely with cross-functional teams to achieve the best results. My adaptability
-                    and
-                    problem-solving mindset allow me to quickly learn new tools and technologies and implement them
-                    effectively to create solutions that meet user needs.</p>
+                  <p id="answerEight">Tôi đã làm việc trên nhiều dự án, bao gồm phát triển một ứng dụng blockchain sử
+                    dụng Golang, xử lý giao dịch và giao tiếp mạng thông qua gRPC và ECDSA. Tôi cũng đã phát triển một
+                    số ứng dụng web sử dụng Java Spring Boot và AngularJS, đồng thời tối ưu hóa truy vấn cơ sở dữ liệu
+                    với PostgreSQL, MongoDB và Apache Solr.</p>
                 </div>
               </div>
             </div>
@@ -403,17 +401,16 @@ https://www.tooplate.com/view/2120-ben-resume
                 <h2 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                    How do you stay updated with the latest technologies?
+                    <span id="questionNine">Bạn cảm thấy thoải mái làm việc với công nghệ nào nhất?</span>
                   </button>
                 </h2>
               </div>
               <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
                 <div class="card-body">
-                  <p>I am always keen to stay updated on the latest trends and technologies in the development world. I
-                    regularly follow tech blogs, participate in webinars, and attend conferences to learn from industry
-                    leaders. Additionally, I experiment with new tools and technologies in personal projects to gain
-                    hands-on
-                    experience.</p>
+                  <p id="answerNine">Tôi thành thạo các công nghệ frontend như JavaScript, jQuery, và AngularJS. Đối với
+                    phát triển backend, tôi sử dụng Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core),
+                    và Node.js (ExpressJS). Tôi cũng có kinh nghiệm với các cơ sở dữ liệu quan hệ và NoSQL như MySQL,
+                    SQL Server, MongoDB và PostgreSQL.</p>
                 </div>
               </div>
             </div>
@@ -430,21 +427,21 @@ https://www.tooplate.com/view/2120-ben-resume
           <form id="contactForm" method="post" action="javascript:void(0);" class="contact-form webform" role="form">
             <div class="form-group d-flex flex-column-reverse">
               <input type="text" class="form-control" name="Fullname" id="cf-name" placeholder="Your Name" required>
-              <label for="cf-name" class="webform-label">Full Name</label>
+              <label for="cf-name" class="webform-label" id="label-fullname">Họ và tên</label>
             </div>
 
             <div class="form-group d-flex flex-column-reverse">
               <input type="email" class="form-control" name="Email" id="cf-email" placeholder="Your Email" required>
-              <label for="cf-email" class="webform-label">Your Email</label>
+              <label for="cf-email" class="webform-label" id="label-email">Email của bạn</label>
             </div>
 
             <div class="form-group d-flex flex-column-reverse">
               <textarea class="form-control" rows="5" name="Message" id="cf-message" placeholder="Your Message"
                 required></textarea>
-              <label for="cf-message" class="webform-label">Message</label>
+              <label for="cf-message" class="webform-label" id="label-message">Tin nhắn</label>
             </div>
 
-            <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+            <button type="submit" class="form-control" id="submit-button" name="submit">Gửi</button>
           </form>
         </div>
 
@@ -557,6 +554,237 @@ https://www.tooplate.com/view/2120-ben-resume
   <script src="js/smoothscroll.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+    // Chặn phím F12 và Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+U
+    document.addEventListener('keydown', function (event) {
+      if (event.keyCode === 123) { // F12
+        event.preventDefault();
+        return false;
+      }
+      if (event.ctrlKey && event.shiftKey && (event.keyCode === 73 || event.keyCode === 74)) { // Ctrl+Shift+I/J
+        event.preventDefault();
+        return false;
+      }
+      if (event.ctrlKey && event.keyCode === 85) { // Ctrl+U
+        event.preventDefault();
+        return false;
+      }
+    });
+
+    // Chặn chuột phải
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+
+    // Chặn mở devtools bằng cách phát hiện kích thước cửa sổ bất thường
+    (function () {
+      const devtools = {
+        open: false,
+        orientation: null,
+      };
+      const threshold = 160;
+      setInterval(function () {
+        const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+        const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+        if (widthThreshold || heightThreshold) {
+          if (!devtools.open) {
+            alert('Vui lòng không kiểm tra mã nguồn trang web!');
+            window.location.href = 'about:blank'; // hoặc chuyển hướng, hoặc logout, tùy bạn
+          }
+          devtools.open = true;
+        } else {
+          devtools.open = false;
+        }
+      }, 500);
+    })();
+    const translations = {
+      vi: {
+        brand: "Đặng Hoàng Tuấn",
+        intro: "Giới thiệu",
+        about: "Về tôi",
+        reviews: "Đánh giá",
+        contact: "Liên hệ",
+        awards: "Giải thưởng",
+        viewCv: "Xem CV",
+        switchButton: "English",
+        brandAboutMe: "Về Đặng Hoàng Tuấn",
+        contentAboutMeP1: "Tôi là một nhân viên IT đam mê với kinh nghiệm thực tế trong phát triển backend và quản trị mạng/hệ thống. Tôi luôn khao khát học hỏi công nghệ mới và liên tục nâng cao kỹ năng của mình."
+        , fullName: "Họ và tên: ",
+        dob: "Ngày sinh: ", mainSkills: "Kỹ Năng Chính",
+        mainSkillsContent: "Thành thạo phát triển backend với Java (Spring Boot), Golang (Echo), và C# (.NET Core). Kiến thức vững về quản trị mạng và hệ thống bao gồm Cisco, FortiGate, và các nền tảng ảo hóa như VMware và Hyper-V.",
+        practicalExperience: "Kinh Nghiệm Thực Tế",
+        practicalExperienceContent: "Kinh nghiệm thực tế trong quản trị hệ thống, phát triển phần mềm, và quản lý kho tại các công ty như Lac Ty, Đại Phát Đạt và Ninja Van. Gần đây đã đóng góp vào phát triển API backend tại ST Connection.",
+        careerObjective: "Mục Tiêu Nghề Nghiệp",
+        careerObjectiveContent: "Trở thành một kỹ sư full-stack với khả năng DevOps mạnh mẽ, liên tục nâng cao kiến thức về công nghệ đám mây, hệ thống phân tán và các phương pháp bảo mật mạng.",
+        heroTitle: "👋 Đặng Hoàng Tuấn, Nhân viên IT",
+        highlightedProjects: "Các Dự Án Nổi Bật",
+        blockchainProjectTitle: "Dự án Blockchain",
+        blockchainProjectDesc: "Phát triển một ứng dụng dựa trên Blockchain sử dụng Golang, bao gồm xác thực giao dịch, giao tiếp ngang hàng, và cơ chế proof-of-work.",
+        viewOnGitHub: "Xem trên GitHub",
+        telegramChatbotTitle: "Chatbot Telegram",
+        telegramChatbotDesc: "Xây dựng một chatbot Telegram sử dụng Java, kỹ thuật NLP, tích hợp Apache Solr cho tìm kiếm nhanh, và MySQL để quản lý dữ liệu người dùng.",
+        dentalClinicProjectTitle: "Quản lý Phòng khám Nha khoa",
+        dentalClinicProjectDesc: "Thiết kế và triển khai hệ thống quản lý phòng khám nha khoa bao gồm hồ sơ bệnh nhân, lịch hẹn, và theo dõi điều trị sử dụng Java Spring Boot và AngularJS.",
+        viewBackend: "Xem Backend",
+        viewFrontend: "Xem Frontend",
+        question1: "Bạn có thể giới thiệu về bản thân và cho chúng tôi biết về quá trình học tập và công việc của bạn không?",
+        question2: "Bạn đã tham gia vào những dự án nào trong quá khứ?",
+        question3: "Bạn cảm thấy thoải mái làm việc với công nghệ nào nhất?",
+        answer1: "Tôi là một nhân viên IT đam mê với kinh nghiệm thực tế trong phát triển backend và quản trị mạng/hệ thống. Tôi luôn khao khát học hỏi công nghệ mới và liên tục nâng cao kỹ năng của mình.",
+        answer2: "Tôi đã làm việc trên nhiều dự án, bao gồm phát triển một ứng dụng blockchain sử dụng Golang, xử lý giao dịch và giao tiếp mạng thông qua gRPC và ECDSA. Tôi cũng đã phát triển một số ứng dụng web sử dụng Java Spring Boot và AngularJS, đồng thời tối ưu hóa truy vấn cơ sở dữ liệu với PostgreSQL, MongoDB và Apache Solr.",
+        answer3: "Tôi thành thạo các công nghệ frontend như JavaScript, jQuery, và AngularJS. Đối với phát triển backend, tôi sử dụng Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core), và Node.js (ExpressJS). Tôi cũng có kinh nghiệm với các cơ sở dữ liệu quan hệ và NoSQL như MySQL, SQL Server, MongoDB và PostgreSQL."
+        , contentAboutMeP2: "Hiện tại, tôi đang theo học tại Trường Cao đẳng FPT Polytechnic với chuyên ngành Công nghệ Thông tin (GPA: 3.5). Mục tiêu dài hạn của tôi là trở thành một kỹ sư full-stack với nền tảng vững chắc về cơ sở hạ tầng và DevOps và quản trị mạng."
+        ,
+        questionFour: "Bạn tiếp cận việc giải quyết vấn đề trong các dự án của mình như thế nào?",
+        answerFour: "Tôi tiếp cận việc giải quyết vấn đề bằng cách phân tích các thách thức phức tạp thành những nhiệm vụ nhỏ hơn và dễ quản lý hơn. Tôi tận dụng kiến thức về thuật toán, mẫu thiết kế, và các phương pháp tốt nhất để tìm ra những giải pháp hiệu quả và có khả năng mở rộng. Bên cạnh đó, tôi hợp tác với các nhóm và sử dụng các công cụ như Git, Docker và dịch vụ đám mây để đảm bảo rằng giải pháp là có thể mở rộng, bảo mật và bảo trì được.",
+        questionFive: "Điều gì thúc đẩy bạn tiếp tục phát triển như một nhà phát triển?",
+        answerFive: "Tôi đam mê việc học hỏi liên tục và áp dụng công nghệ mới để giải quyết các vấn đề trong thế giới thực. Tính chất luôn thay đổi của ngành công nghệ thúc đẩy tôi duy trì cập nhật về các tiến bộ mới nhất trong các framework, ngôn ngữ lập trình và các phương pháp tốt nhất. Tôi tìm thấy sự thỏa mãn lớn khi xây dựng các ứng dụng có thể mở rộng, hiệu quả và có tác động tích cực đến cuộc sống của mọi người và các doanh nghiệp.",
+        questionSix: "Tại sao chúng tôi nên chọn bạn cho vị trí này?",
+        answerSix: "Tôi tin rằng tôi mang đến một sự kết hợp mạnh mẽ giữa kỹ năng, kinh nghiệm và đam mê cho công việc. Kinh nghiệm làm việc với nhiều công nghệ khác nhau, kết hợp với khả năng học hỏi nhanh và thích nghi với thử thách mới, khiến tôi trở thành một ứng viên xuất sắc cho vị trí này. Tôi có động lực, khả năng làm việc nhóm và luôn cố gắng hoàn thành công việc với chất lượng cao. Tôi tự tin rằng với nền tảng và sự cống hiến của mình, tôi sẽ đóng góp hiệu quả cho đội ngũ của bạn và đạt được các mục tiêu của công ty."
+        , questionSeven: "Bạn có thể giới thiệu về bản thân và cho chúng tôi biết về quá trình học tập và công việc của bạn không?",
+        answerSeven: "Tôi là một nhân viên IT đam mê với kinh nghiệm thực tế trong phát triển backend và quản trị mạng/hệ thống. Tôi luôn khao khát học hỏi công nghệ mới và liên tục nâng cao kỹ năng của mình.",
+        questionEight: "Bạn đã tham gia vào những dự án nào trong quá khứ?",
+        answerEight: "Tôi đã làm việc trên nhiều dự án, bao gồm phát triển một ứng dụng blockchain sử dụng Golang, xử lý giao dịch và giao tiếp mạng thông qua gRPC và ECDSA. Tôi cũng đã phát triển một số ứng dụng web sử dụng Java Spring Boot và AngularJS, đồng thời tối ưu hóa truy vấn cơ sở dữ liệu với PostgreSQL, MongoDB và Apache Solr.",
+        questionNine: "Bạn cảm thấy thoải mái làm việc với công nghệ nào nhất?",
+        answerNine: "Tôi thành thạo các công nghệ frontend như JavaScript, jQuery, và AngularJS. Đối với phát triển backend, tôi sử dụng Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core), và Node.js (ExpressJS). Tôi cũng có kinh nghiệm với các cơ sở dữ liệu quan hệ và NoSQL như MySQL, SQL Server, MongoDB và PostgreSQL."
+        ,
+
+        labelFullname: "Họ và tên",
+        labelEmail: "Email của bạn",
+        labelMessage: "Tin nhắn",
+        labelSend: "Gửi",
+
+      },
+      en: {
+        brand: "Hoang Tuan Dang",
+        intro: "Introduction",
+        about: "About Me",
+        reviews: "Reviews",
+        contact: "Contact",
+        awards: "Awards",
+        viewCv: "View CV",
+        switchButton: "Tiếng Việt",
+        brandAboutMe: "About Hoang Tuan Dang",
+        contentAboutMeP1: "I am a passionate IT staff with hands-on experience in backend development and network/system administration. I am always eager to learn new technologies and continuously improve my skills."
+        , fullName: "Full Name",
+        mainSkills: "Main Skills",
+        mainSkillsContent: "Proficient in backend development with Java (Spring Boot), Golang (Echo), and C# (.NET Core). Solid knowledge in network and system administration including Cisco, FortiGate, and virtualization platforms like VMware and Hyper-V.",
+        practicalExperience: "Practical Experience",
+        practicalExperienceContent: "Hands-on experience in system administration, software development, and warehouse management at companies such as Lac Ty, Dai Phat Dat, and Ninja Van. Recently contributed to backend API development at ST Connection.",
+        careerObjective: "Career Objective",
+        highlightedProjects: "Highlighted Projects",
+        blockchainProjectTitle: "Blockchain Project",
+        blockchainProjectDesc: "Developed a blockchain-based application using Golang, covering transaction validation, peer-to-peer communication, and proof-of-work mechanisms.",
+        viewOnGitHub: "View on GitHub",
+        telegramChatbotTitle: "Telegram Chatbot",
+        telegramChatbotDesc: "Built a Telegram chatbot using Java, NLP techniques, integrated Apache Solr for fast search, and MySQL for managing user data.",
+        dentalClinicProjectTitle: "Dental Clinic Management",
+        dentalClinicProjectDesc: "Designed and implemented a dental clinic management system including patient records, appointments, and treatment tracking using Java Spring Boot and AngularJS.",
+        viewBackend: "View Backend",
+        viewFrontend: "View Frontend",
+        careerObjectiveContent: "To become a full-stack engineer with strong DevOps capabilities, continuously enhancing knowledge in cloud technologies, distributed systems, and cybersecurity best practices.",
+        heroTitle: "👋 Hoang Tuan Dang, IT Staff",
+        dob: "Date of Birth:"
+        ,
+        question1: "Can you introduce yourself and tell us about your education and work experience?",
+        question2: "What projects have you worked on in the past?",
+        question3: "Which technologies do you feel most comfortable working with?",
+        answer1: "I am a passionate IT professional with hands-on experience in backend development and network/system administration. I am always eager to learn new technologies and continuously improve my skills.",
+        answer2: "I have worked on various projects, including building a blockchain application using Golang, handling transactions and network communication through gRPC and ECDSA. I have also developed several web applications using Java Spring Boot and AngularJS, while optimizing database queries with PostgreSQL, MongoDB, and Apache Solr.",
+        answer3: "I am proficient in frontend technologies such as JavaScript, jQuery, and AngularJS. For backend development, I work with Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core), and Node.js (ExpressJS). I also have experience with relational and NoSQL databases like MySQL, SQL Server, MongoDB, and PostgreSQL."
+        , contentAboutMeP2: "Currently, I am pursuing my studies at FPT Polytechnic College with a major in Information Technology (GPA: 3.5). My long-term goal is to become a full-stack engineer with a strong foundation in infrastructure and DevOps and network administration."
+        ,
+        questionFour: "How do you approach problem-solving in your projects?",
+        answerFour: "I approach problem-solving by breaking down complex challenges into smaller, more manageable tasks. I leverage my knowledge of algorithms, design patterns, and best practices to find the most efficient and scalable solutions. Additionally, I collaborate with teams and utilize tools like Git, Docker, and cloud services to ensure that the solution is scalable, secure, and maintainable.",
+        questionFive: "What motivates you to continue growing as a developer?",
+        answerFive: "I am passionate about continuous learning and applying new technologies to solve real-world problems. The ever-evolving nature of the tech industry motivates me to stay updated on the latest advancements in frameworks, programming languages, and best practices. I find great satisfaction in building scalable, efficient, and impactful applications that can make a difference in people's lives and businesses.",
+        questionSix: "Why should we choose you for this position?",
+        answerSix: "I believe I bring a strong combination of skills, experience, and passion to the table. My experience working with a wide range of technologies, combined with my ability to learn quickly and adapt to new challenges, makes me an excellent fit for this role. I am driven, collaborative, and always strive to deliver high-quality work. I am confident that my background and dedication will help me contribute effectively to your team and achieve the company's goals."
+        , questionSeven: "Can you introduce yourself and tell us about your education and work experience?",
+        answerSeven: "I am a passionate IT staff with hands-on experience in backend development and network/system administration. I am always eager to learn new technologies and continuously improve my skills.",
+        questionEight: "What projects have you worked on in the past?",
+        answerEight: "I have worked on various projects, including developing a blockchain application using Golang, handling transactions and network communication via gRPC and ECDSA. I have also developed several web applications using Java Spring Boot and AngularJS, while optimizing database queries with PostgreSQL, MongoDB, and Apache Solr.",
+        questionNine: "Which technologies do you feel most comfortable working with?",
+        answerNine: "I am proficient in frontend technologies such as JavaScript, jQuery, and AngularJS. For backend development, I work with Java (Spring Boot, Spring MVC), Golang (Echo, GORM), C# (.NET Core), and Node.js (ExpressJS). I also have experience with relational and NoSQL databases like MySQL, SQL Server, MongoDB, and PostgreSQL."
+        ,
+        labelFullname: "Full Name",
+        labelEmail: "Your Email",
+        labelMessage: "Message",
+        labelSend: "Send",
+      }
+    };
+
+    let currentLang = 'vi'; // mặc định tiếng Việt
+
+    document.getElementById('switch-language').addEventListener('click', function () {
+      currentLang = (currentLang === 'vi') ? 'en' : 'vi';
+
+      document.getElementById('brand-name').textContent = translations[currentLang].brand;
+      document.getElementById('nav-intro').textContent = translations[currentLang].intro;
+      document.getElementById('nav-about').textContent = translations[currentLang].about;
+      document.getElementById('nav-reviews').textContent = translations[currentLang].reviews;
+      document.getElementById('nav-contact').textContent = translations[currentLang].contact;
+      document.getElementById('nav-awards').textContent = translations[currentLang].awards;
+      document.getElementById('btn-cv').textContent = translations[currentLang].viewCv;
+      document.getElementById('switch-language').textContent = translations[currentLang].switchButton;
+      document.getElementById('brand-about-me').textContent = translations[currentLang].brandAboutMe;
+      document.getElementById('content-about-me-p1').textContent = translations[currentLang].contentAboutMeP1;
+      document.getElementById('content-about-me-p2').textContent = translations[currentLang].contentAboutMeP2;
+      document.getElementById('full-name-about-me').textContent = translations[currentLang].fullName;
+      document.getElementById('name-about-me').textContent = translations[currentLang].brand;
+      document.getElementById('dob-about-me').textContent = translations[currentLang].dob;
+      document.getElementById('hero-title').textContent = translations[currentLang].heroTitle;
+
+      document.getElementById('main-skills-title').textContent = translations[currentLang].mainSkills;
+      document.getElementById('main-skills-content').textContent = translations[currentLang].mainSkillsContent;
+      document.getElementById('practical-experience-title').textContent = translations[currentLang].practicalExperience;
+      document.getElementById('practical-experience-content').textContent = translations[currentLang].practicalExperienceContent;
+      document.getElementById('career-objective-title').textContent = translations[currentLang].careerObjective;
+      document.getElementById('career-objective-content').textContent = translations[currentLang].careerObjectiveContent;
+
+      document.getElementById('highlighted-projects-title').textContent = translations[currentLang].highlightedProjects;
+      document.getElementById('blockchainProjectTitle').textContent = translations[currentLang].blockchainProjectTitle;
+      document.getElementById('blockchainProjectDesc').textContent = translations[currentLang].blockchainProjectDesc;
+      document.getElementById('telegramChatbotTitle').textContent = translations[currentLang].telegramChatbotTitle;
+      document.getElementById('telegramChatbotDesc').textContent = translations[currentLang].telegramChatbotDesc;
+      document.getElementById('dentalClinicProjectTitle').textContent = translations[currentLang].dentalClinicProjectTitle;
+      document.getElementById('dentalClinicProjectDesc').textContent = translations[currentLang].dentalClinicProjectDesc;
+      document.getElementById('viewOnGitHub').textContent = translations[currentLang].viewOnGitHub;
+      document.getElementById('viewOnGitHubChatbot').textContent = translations[currentLang].viewOnGitHub;
+      document.getElementById('viewBackend').textContent = translations[currentLang].viewBackend;
+      document.getElementById('viewFrontend').textContent = translations[currentLang].viewFrontend;
+
+      document.getElementById('question1').textContent = translations[currentLang].question1;
+      document.getElementById('question2').textContent = translations[currentLang].question2;
+      document.getElementById('question3').textContent = translations[currentLang].question3;
+
+      document.getElementById('answer1').textContent = translations[currentLang].answer1;
+      document.getElementById('answer2').textContent = translations[currentLang].answer2;
+      document.getElementById('answer3').textContent = translations[currentLang].answer3;
+
+      document.getElementById('questionFour').textContent = translations[currentLang].questionFour;
+      document.getElementById('answerFour').textContent = translations[currentLang].answerFour;
+      document.getElementById('questionFive').textContent = translations[currentLang].questionFive;
+      document.getElementById('answerFive').textContent = translations[currentLang].answerFive;
+      document.getElementById('questionSix').textContent = translations[currentLang].questionSix;
+      document.getElementById('answerSix').textContent = translations[currentLang].answerSix;
+
+
+      document.getElementById("questionSeven").textContent = translations[currentLang].questionSeven;
+      document.getElementById("answerSeven").textContent = translations[currentLang].answerSeven;
+      document.getElementById("questionEight").textContent = translations[currentLang].questionEight;
+      document.getElementById("answerEight").textContent = translations[currentLang].answerEight;
+      document.getElementById("questionNine").textContent = translations[currentLang].questionNine;
+      document.getElementById("answerNine").textContent = translations[currentLang].answerNine;
+
+
+      document.getElementById("label-fullname").textContent = translations[currentLang].labelFullname;
+      document.getElementById("label-email").textContent = translations[currentLang].labelEmail;
+
+      document.getElementById("label-message").textContent = translations[currentLang].labelMessage;
+      document.getElementById("submit-button").textContent = translations[currentLang].labelSend;
+    });
+  </script>
 
 </body>
 
