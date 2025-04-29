@@ -52,7 +52,7 @@ https://www.tooplate.com/view/2120-ben-resume
           </li>
 
           <li class="nav-item">
-            <a href="#testimonials" class="nav-link smoothScroll" id="nav-reviews">Đánh giá</a>
+            <a href="#testimonials" class="nav-link smoothScroll" id="nav-reviews">Dự án</a>
           </li>
 
           <li class="nav-item">
@@ -545,17 +545,25 @@ https://www.tooplate.com/view/2120-ben-resume
 
         <!-- Awards Section -->
         <div class="col-lg-6 col-md-6 col-12">
-          <h3 class="my-4 pt-4 pt-lg-0">Danh hiệu và giải thưởng</h3>
+          <h3 class="my-4 pt-4 pt-lg-0" id="awards-title">Danh hiệu và Giải thưởng</h3>
           <ul>
-            <li><strong>Best Service Provider 2023</strong> - Recognized for excellence in customer service and quality.
-            </li>
-            <li><strong>Top Innovation Award 2022</strong> - Awarded for our groundbreaking technology in the industry.
-            </li>
-            <li><strong>Leadership in Excellence 2021</strong> - Recognized for outstanding leadership and vision in our
-              field.</li>
-            <li><strong>Best Customer Satisfaction 2020</strong> - Celebrating our commitment to customer satisfaction.
-            </li>
+            <li id="award-1">Chứng chỉ Triển khai Ứng dụng với Docker - Được cấp chứng nhận về triển
+              khai và quản lý
+              ứng dụng bằng Docker.</li>
+            <li id="award-2">Giải thưởng Cuộc thi Game Việt Hackathon - Đạt giải trong cuộc thi sáng
+              tạo và phát
+              triển trò chơi tại Game Việt Hackathon.</li>
+            <li id="award-3">Danh hiệu Sinh viên Giỏi toàn khóa - Được công nhận sinh viên giỏi trong
+              tất cả các học
+              kỳ.</li>
+            <li id="award-4">Chứng nhận Hoàn thành khóa học lập trình web và phát triển phần mềm -
+              Trang bị kỹ năng
+              toàn diện về phát triển web và ứng dụng phần mềm hiện đại.</li>
+            <li id="award-5">Tham gia các dự án thực tế - Thực hiện nhiều dự án về ứng dụng web, hệ
+              thống API và
+              triển khai server trong quá trình học tập và thực tập.</li>
           </ul>
+
         </div>
 
         <!-- Contact Us Section -->
@@ -624,32 +632,13 @@ https://www.tooplate.com/view/2120-ben-resume
     });
 
     // Chặn mở devtools bằng cách phát hiện kích thước cửa sổ bất thường
-    (function () {
-      const devtools = {
-        open: false,
-        orientation: null,
-      };
-      const threshold = 160;
-      setInterval(function () {
-        const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-        const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-        if (widthThreshold || heightThreshold) {
-          if (!devtools.open) {
-            alert('Vui lòng không kiểm tra mã nguồn trang web!');
-            window.location.href = 'about:blank'; // hoặc chuyển hướng, hoặc logout, tùy bạn
-          }
-          devtools.open = true;
-        } else {
-          devtools.open = false;
-        }
-      }, 500);
-    })();
+
     const translations = {
       vi: {
         brand: "Đặng Hoàng Tuấn",
         intro: "Giới thiệu",
         about: "Về tôi",
-        reviews: "Đánh giá",
+        reviews: "Dự án",
         contact: "Liên hệ",
         awards: "Giải thưởng",
         viewCv: "Xem CV",
@@ -714,6 +703,12 @@ https://www.tooplate.com/view/2120-ben-resume
         networkAdminProjectTitle: "Triển khai và Quản trị Hệ thống Mạng Doanh nghiệp",
         networkAdminProjectDesc: "Thiết kế và triển khai hệ thống mạng LAN/WAN cho doanh nghiệp, cấu hình Firewall Fortinet, định tuyến Router Cisco, xây dựng VPN truy cập từ xa và giám sát hệ thống với Zabbix, đảm bảo uptime 99.9%.",
         computerTechnicianProjectTitle: "Kỹ thuật viên Sửa chữa Máy tính - Laptop",
+        awardsTitle: "Danh hiệu và Giải thưởng",
+        award1: "Chứng chỉ Triển khai Ứng dụng với Docker - Được cấp chứng nhận về triển khai và quản lý ứng dụng bằng Docker.",
+        award2: "Giải thưởng Cuộc thi Game Việt Hackathon - Đạt giải trong cuộc thi sáng tạo và phát triển trò chơi tại Game Việt Hackathon.",
+        award3: "Danh hiệu Sinh viên Giỏi toàn khóa - Được công nhận sinh viên giỏi trong tất cả các học kỳ.",
+        award4: "Chứng nhận Hoàn thành khóa học lập trình web và phát triển phần mềm - Trang bị kỹ năng toàn diện về phát triển web và ứng dụng phần mềm hiện đại.",
+        award5: "Tham gia các dự án thực tế - Thực hiện nhiều dự án về ứng dụng web, hệ thống API và triển khai server trong quá trình học tập và thực tập.",
         computerTechnicianProjectDesc: "Thực hiện bảo trì, sửa chữa, nâng cấp phần cứng và phần mềm cho máy tính, laptop. Cài đặt hệ điều hành (Windows, Linux), vệ sinh phần cứng, thay thế linh kiện (RAM, SSD, HDD), khắc phục lỗi hệ thống và tối ưu hiệu suất thiết bị.",
       },
       en: {
@@ -786,7 +781,12 @@ https://www.tooplate.com/view/2120-ben-resume
         instagram: "Instagram",
         linkedin: "LinkedIn",
         youtube: "YouTube",
-        copyrightText: "© 2025 Hoang Tuan Dang"
+        copyrightText: "© 2025 Hoang Tuan Dang", awardsTitle: "Awards and Honors",
+        award1: "Certificate in Application Deployment with Docker - Certified in deploying and managing applications using Docker.",
+        award2: "Award at Game Viet Hackathon Competition - Won an award in the creativity and game development competition at Game Viet Hackathon.",
+        award3: "Excellent Student Award for the Entire Course - Recognized as an excellent student throughout all semesters.",
+        award4: "Certificate of Completion in Web Programming and Software Development - Equipped with comprehensive skills in modern web and application development.",
+        award5: "Participation in Real Projects - Worked on various projects involving web applications, API systems, and server deployment during study and internship periods.",
       }
     };
 
@@ -871,6 +871,14 @@ https://www.tooplate.com/view/2120-ben-resume
       document.getElementById("linkedin-link").title = translations[currentLang].linkedin;
       document.getElementById("youtube-link").title = translations[currentLang].youtube;
       document.getElementById("copyright-text").textContent = translations[currentLang].copyrightText;
+
+      // Gán dữ liệu từ translations theo ngôn ngữ hiện tại
+      document.getElementById('awards-title').textContent = translations[currentLang].awardsTitle;
+      document.getElementById('award-1').textContent = translations[currentLang].award1;
+      document.getElementById('award-2').textContent = translations[currentLang].award2;
+      document.getElementById('award-3').textContent = translations[currentLang].award3;
+      document.getElementById('award-4').textContent = translations[currentLang].award4;
+      document.getElementById('award-5').textContent = translations[currentLang].award5;
 
 
       document.getElementById("networkAdminProjectTitle").innerText = translations[currentLang].networkAdminProjectTitle;
