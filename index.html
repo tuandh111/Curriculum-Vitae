@@ -209,7 +209,8 @@ https://www.tooplate.com/view/2120-ben-resume
         <div class="col-lg-4 col-md-4 col-12">
           <h3 id="practical-experience-title">Kinh Nghiệm Thực Tế</h3>
           <p id="practical-experience-content">Kinh nghiệm thực tế trong quản trị hệ thống, phát triển phần mềm, và quản
-            lý kho tại các công ty như Lac Ty, Đại Phát Đạt, Ninja Van,... Gần đây đã đóng góp vào phát triển API
+            lý kho tại các công ty như Trăng non, Lac Ty, Đại Phát Đạt, Ninja Van,... Gần đây đã đóng góp vào phát triển
+            API
             backend
             tại ST Connection.</p>
         </div>
@@ -233,6 +234,23 @@ https://www.tooplate.com/view/2120-ben-resume
           <h3 class="mb-5 text-center" id="highlighted-projects-title">Các Dự Án Nổi Bật</h3>
 
           <div class="owl-carousel owl-theme" id="testimonials-carousel">
+            <div class="item">
+              <div class="testimonials-thumb d-flex">
+                <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
+                  <img src="images/helpdesk.jpg " class="img-fluid mt-3" alt="Dự án Công ty Newmoon"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="testimonials-info">
+                  <p id="newmoonProjectDesc">
+                    Hiện đang làm việc tại công ty TNHH SX DV TM Trăng non, tham gia thiết lập và quản lý hệ thống
+                    mạng nội bộ, lắp đặt & cấu hình hệ thống camera giám sát, đồng thời phát triển website công ty.
+                  </p>
+                  <a href="https://newmoon.vn" target="_blank" id="viewWebsite">Truy cập Website</a>
+                  <h6 class="mb-0" id="newmoonProjectName">Phần mềm quản lý công ty</h6>
+                </div>
+              </div>
+            </div>
+
             <div class="item">
               <div class="testimonials-thumb d-flex">
                 <div class="testimonials-image" style="width: 100%; height: 200px; overflow: hidden;">
@@ -262,7 +280,7 @@ https://www.tooplate.com/view/2120-ben-resume
                 <div class="testimonials-info">
                   <p id="blockchainProjectDesc">Phát triển một ứng dụng dựa trên Blockchain sử dụng Golang, bao gồm xác
                     thực giao dịch, giao tiếp ngang hàng, và cơ chế proof-of-work.</p>
-                  <a href="https://tuandh111.github.io/blockchain-nft/" target="_blank" id="">Xem
+                  <a href="https://tuandh111.github.io/blockchain-nft/" target="_blank" id="viewWebsiteBlockChain">Xem
                     Website</a>
                   <a href="https://tuandh111.github.io/blockchain-nft/" target="_blank" id="">
                     <h6 class="mb-0" id="blockchainProjectTitle">Dự án Blockchain</h6>
@@ -835,6 +853,10 @@ https://www.tooplate.com/view/2120-ben-resume
         award4: "Chứng nhận Hoàn thành khóa học lập trình web và phát triển phần mềm - Trang bị kỹ năng toàn diện về phát triển web và ứng dụng phần mềm hiện đại.",
         award5: "Tham gia các dự án thực tế - Thực hiện nhiều dự án về ứng dụng web, hệ thống API và triển khai server trong quá trình học tập và thực tập.",
         computerTechnicianProjectDesc: "Thực hiện bảo trì, sửa chữa, nâng cấp phần cứng và phần mềm cho máy tính, laptop. Cài đặt hệ điều hành (Windows, Linux), vệ sinh phần cứng, thay thế linh kiện (RAM, SSD, HDD), khắc phục lỗi hệ thống và tối ưu hiệu suất thiết bị.",
+        newmoonProjectDesc: "Hiện đang làm việc tại công ty TNHH SX DV TM Trăng non, tham gia thiết lập và quản lý hệ thống mạng nội bộ, lắp đặt & cấu hình hệ thống camera giám sát, đồng thời phát triển website công ty.",
+        newmoonProjectName: "Quản lý quản lý công ty",
+        viewWebsite:"Xem Website",
+        viewWebsiteBlockChain:"Xem Website"
       },
       en: {
         brand: "Hoang Tuan Dang",
@@ -863,6 +885,8 @@ https://www.tooplate.com/view/2120-ben-resume
         dentalClinicProjectDesc: "Designed and implemented a dental clinic management system including patient records, appointments, and treatment tracking using Java Spring Boot and AngularJS.",
         viewBackend: "View Backend",
         viewFrontend: "View Frontend",
+               viewWebsite:"View Website",
+                 viewWebsiteBlockChain:"View Website",
         careerObjectiveContent: "To become a full-stack engineer with strong DevOps capabilities, continuously enhancing knowledge in cloud technologies, distributed systems, and cybersecurity best practices.",
         heroTitle: "👋 Hoang Tuan Dang, IT Staff",
         dob: "Date of Birth:"
@@ -912,6 +936,8 @@ https://www.tooplate.com/view/2120-ben-resume
         award3: "Excellent Student Award for the Entire Course - Recognized as an excellent student throughout all semesters.",
         award4: "Certificate of Completion in Web Programming and Software Development - Equipped with comprehensive skills in modern web and application development.",
         award5: "Participation in Real Projects - Worked on various projects involving web applications, API systems, and server deployment during study and internship periods.",
+        newmoonProjectDesc: "Currently working at Newmoon Production, Services and Trading Co., Ltd., involved in setting up and managing the internal network system, installing and configuring surveillance camera systems, and developing the company's website."
+        , newmoonProjectName: "Business Management Software"
       }
     };
 
@@ -954,6 +980,8 @@ https://www.tooplate.com/view/2120-ben-resume
       document.getElementById('viewOnGitHubChatbot').textContent = translations[currentLang].viewOnGitHub;
       document.getElementById('viewBackend').textContent = translations[currentLang].viewBackend;
       document.getElementById('viewFrontend').textContent = translations[currentLang].viewFrontend;
+       document.getElementById('viewWebsite').textContent = translations[currentLang].viewWebsite;
+              document.getElementById('viewWebsiteBlockChain').textContent = translations[currentLang].viewWebsiteBlockChain;
 
       document.getElementById('question1').textContent = translations[currentLang].question1;
       document.getElementById('question2').textContent = translations[currentLang].question2;
@@ -1010,6 +1038,9 @@ https://www.tooplate.com/view/2120-ben-resume
       document.getElementById("networkAdminProjectDesc").innerText = translations[currentLang].networkAdminProjectDesc;
       document.getElementById("computerTechnicianProjectTitle").innerText = translations[currentLang].computerTechnicianProjectTitle;
       document.getElementById("computerTechnicianProjectDesc").innerText = translations[currentLang].computerTechnicianProjectDesc;
+
+      document.getElementById("newmoonProjectDesc").innerText = translations[currentLang].newmoonProjectDesc;
+      document.getElementById("newmoonProjectName").innerText = translations[currentLang].newmoonProjectName;
       startTyped(currentLang);
     });
     window.onload = () => startTyped('vi');
